@@ -1,10 +1,22 @@
 
-
-
 <div class="container mt-4">
     <form action="" method="post">
         <table>
             <tbody>
+                <tr>
+                    <td>Select Type</td>
+                    <td>
+                        <select name="type">
+                            <!--                          --><?// for ($i = 1; $i < 5; $i++){?>
+                            <!--                              <option value="" >-->
+                            <!--                                --><?//= $i?>
+                            <!--                              </option>-->
+                            <!--                          --><?//}?>
+                            <option value="">RAM</option>
+                            <option value="">ROM</option>
+                        </select>
+                    </td>
+                </tr>
                 <tr>
                     <td>Name</td>
                     <td><input class="input" type="text" name="name"></td>
@@ -19,16 +31,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Select Type</td>
-                    <td>
-                        <select name="authors_name">
-                          <? for ($i = 1; $i < 5; $i++){?>
-                              <option value="" >
-                                <?= $i?>
-                              </option>
-                          <?}?>
-                        </select>
-                    </td>
+                    <td>Price</td>
+                    <td><input class="input" type="number"  min="0" name="price"></td>
                 </tr>
             </tbody>
         </table>

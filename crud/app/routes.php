@@ -10,12 +10,18 @@ $router->get('/contact', function (){
 $router->get('/auth/login', function (){
     $this->handleRequest("Auth", "login");
 });
+$router->post('/auth/login', function (){
+  $this->handleRequest("Auth", "login");
+});
 
 $router->get('/products', function (){
     $this->handleRequest("Products", "index");
 });
 
 $router->get('/addProduct', function (){
+  $this->handleRequest("AddProduct", "index");
+});
+$router->post('/addProduct', function (){
   $this->handleRequest("AddProduct", "index");
 });
 $router->run();

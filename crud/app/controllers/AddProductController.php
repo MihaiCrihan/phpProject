@@ -9,7 +9,15 @@ use View;
 class AddProductController
 {
   public function actionIndex (){
-    $prod = new AddProduct();
-    return View::render('addProduct/index', $prod->create());
+    $object = new AddProduct();
+
+    $object->setName($_POST['name']);
+    $object->setImg($_POST['img']);
+    $object->setDescription($_POST['description']);
+    $object->setType($_POST['type']);
+    $object->setPrice($_POST['price']);
+
+    return View::render('addProduct/index', $object->create());
   }
+
 }
