@@ -1,6 +1,6 @@
 <?php
 namespace Controllers;
-require_once 'app/core/View.php';
+require_once '../app/core/View.php';
 use View;
 
 class MainController

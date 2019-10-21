@@ -1,7 +1,7 @@
 <?php
 namespace Controllers;
-require_once 'app/core/View.php';
-require_once 'app/models/Product.php';
+require_once '../app/core/View.php';
+require_once '../app/models/Product.php';
 use Product;
 use View;
 
